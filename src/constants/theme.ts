@@ -1,8 +1,9 @@
 import { Dimensions } from "react-native";
+import { ThemeColors } from "../types/theme";
 
 const { width, height } = Dimensions.get("window");
 
-export const COLORS = {
+export const COLORS: ThemeColors = {
   light: {
     primary: "#16a085",
     background: "#F9FAFB",

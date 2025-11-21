@@ -1,12 +1,7 @@
 import React, { createContext, useState, useContext, ReactNode } from "react";
 import { useColorScheme } from "react-native";
 import { COLORS, SIZES, FONTS } from "../constants/theme";
-
-interface Theme {
-  colors: typeof COLORS;
-  sizes: typeof SIZES;
-  fonts: typeof FONTS;
-}
+import { Theme } from "../types/theme";
 
 interface ThemeContextType {
   theme: Theme;
@@ -28,7 +23,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
     setIsDark((prev) => !prev);
   };
 
-  const theme = {
+  const theme: Theme = {
     colors: isDark ? COLORS.dark : COLORS.light,
     sizes: SIZES,
     fonts: FONTS,
