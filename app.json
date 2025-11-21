@@ -38,7 +38,10 @@
             "backgroundColor": "#000000"
           }
         }
-      ]
+      ],
+      "expo-font", {
+          "fonts": ["./assets/fonts/InterVariable.ttf"]
+      }
     ],
     "experiments": {
       "typedRoutes": true,
