@@ -26,7 +26,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   const { theme } = useTheme();
 
-  const buttonStyles: ViewStyle[] = [
+  const buttonStyles: (ViewStyle | undefined)[] = [
     styles.button,
     {
       backgroundColor:
@@ -37,7 +37,7 @@ const Button: React.FC<ButtonProps> = ({
     style,
   ];
 
-  const textStyles: TextStyle[] = [
+  const textStyles: (TextStyle | undefined)[] = [
     styles.text,
     {
       color: variant === "primary" ? theme.colors.text : theme.colors.primary,
