@@ -39,9 +39,12 @@
           }
         }
       ],
-      "expo-font", {
+      [
+        "expo-font",
+        {
           "fonts": ["./assets/fonts/InterVariable.ttf"]
-      }
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true,

@@ -29,14 +29,7 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
   };
 
   const theme = {
-    colors: isDark
-      ? COLORS
-      : {
-          ...COLORS,
-          ...{
-            /* Light theme colors can be defined here */
-          },
-        },
+    colors: isDark ? COLORS.dark : COLORS.light,
     sizes: SIZES,
     fonts: FONTS,
   };
